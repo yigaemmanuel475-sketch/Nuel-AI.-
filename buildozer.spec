@@ -2,7 +2,9 @@
 title = NUEL AI
 package.name = nuelai
 package.domain = org.nuel
+source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,json
+version = 0.1
 requirements = python3,kivy,plyer,jnius
 orientation = portrait
 fullscreen = 0
