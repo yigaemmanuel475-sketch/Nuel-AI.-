@@ -42,11 +42,7 @@ jobs:
             zip \
             autoconf \
             libtool \
-            pkg-config \
-            libncurses5-dev \
-            libncursesw5-dev \
-            libffi-dev \
-            libssl-dev
+            pkg-config
 
     - name: Install Buildozer and Cython
       run: |
@@ -54,6 +50,9 @@ jobs:
         pip install --upgrade cython==0.29.36 buildozer
 
     - name: Run Buildozer
+      env:
+        ANDROID_NDK_HOME: ""
+        ANDROID_HOME: ""
       run: buildozer -v android debug
 
     - name: Upload APK
