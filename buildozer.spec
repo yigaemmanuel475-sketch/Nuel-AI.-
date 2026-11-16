@@ -1,12 +1,13 @@
+
 [app]
 title = NUEL AI
 package.name = nuelai
 package.domain = org.nuel
 source.include_exts = py,png,jpg,kv,atlas,json
-requirements = python3,kivy
+requirements = python3,kivy,plyer,jnius
 orientation = portrait
 fullscreen = 0
-android.permissions = INTERNET
+android.permissions = INTERNET, CALL_PHONE, CAMERA, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 
 [buildozer]
 log_level = 2
