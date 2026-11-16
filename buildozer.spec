@@ -1,4 +1,3 @@
-
 [app]
 title = NUEL AI
 package.name = nuelai
